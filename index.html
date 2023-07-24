@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="advid">Advice #<span id="idnum"></span></div>
+      <div id="advv" class="adv">
+        "It is easyto sit up and take notice, what's difficult is getting up and
+        taking action."
+      </div>
+      <div class="divid">
+        <img
+          class="divimg"
+          src="./images/pattern-divider-desktop.svg"
+          alt="divider"
+        />
+        <img
+          class="divimg2"
+          src="./images/pattern-divider-mobile.svg"
+          alt="divider"
+        />
+      </div>
+      <div class="dice">
+        <div onclick="genadvice()" class="backg">
+          <img class="btn" src="./images/icon-dice.svg" alt="dice" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
