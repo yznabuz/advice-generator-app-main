@@ -1,9 +1,6 @@
-fetch("https://api.adviceslip.com/advice")
-  .then((response) => response.json())
-  .then((data) => dipadvice(data))
-  .catch((error) => console.error(error));
+genadvice();
 
-function dipadvice(data) {
+function dispadvice(data) {
   const advid = data.slip.id;
   document.getElementById("idnum").innerHTML = advid;
   const adv = data.slip.advice;
@@ -13,6 +10,6 @@ function dipadvice(data) {
 function genadvice() {
   fetch("https://api.adviceslip.com/advice")
     .then((response) => response.json())
-    .then((data) => dipadvice(data))
+    .then((data) => dispadvice(data))
     .catch((error) => console.error(error));
 }
